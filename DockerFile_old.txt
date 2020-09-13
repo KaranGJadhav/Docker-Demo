@@ -1,7 +1,0 @@
-FROM continuumio/anaconda3:5.3.0
-MAINTAINER UNP, https://unp.education
-COPY ./flask_demo /usr/local/python/
-EXPOSE 5000
-WORKDIR /usr/local/python/
-RUN pip install -r requirements.txt
-CMD python MLModelAPI.py
